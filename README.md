@@ -5,8 +5,8 @@ The best jQuery plugin ever.
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/root/jquery.bordermarquee/master/dist/bordermarquee.min.js
-[max]: https://raw.github.com/root/jquery.bordermarquee/master/dist/bordermarquee.js
+[min]: https://raw.github.com/root/jquery.bordermarquee/master/dist/jquery.bordermarquee.min.js
+[max]: https://raw.github.com/root/jquery.bordermarquee/master/dist/jquery.bordermarquee.js
 
 In your web page:
 
@@ -50,7 +50,7 @@ jQuery(function($) {
 ## Examples
 Look example click [here][herelink]
 
-[herelink]: http://xiamingxing.github.io/jquery.floatnavigation/demo/floatnavigation.html
+[herelink]: http://xiamingxing.github.io/jquery.bordermarquee/demo/bordermarquee.html
 
 ## Release History
     1.0.0
