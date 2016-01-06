@@ -1,0 +1,27 @@
+{
+  "name": "bordermarquee",
+  "title": "Bordermarquee",
+  "description": "The best jQuery plugin ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/xiamingxing/jquery.bordermarquee",
+  "author": {
+    "name": "xiamingxing",
+    "email": "xia_mingxing@163.com",
+    "url": "https://blog.xiamingxing.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xiamingxing/jquery.bordermarquee.git"
+  },
+  "bugs": "https://github.com/xiamingxing/jquery.bordermarquee/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/xiamingxing/jquery.bordermarquee/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "1.8"
+  },
+  "keywords": []
+}
