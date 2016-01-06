@@ -1,11 +1,6 @@
-/*
- * bordermarquee
- * https://github.com/xiamingxing/jquery.bordermarquee
- *
- * Copyright (c) 2016 xiamingxing
- * Licensed under the MIT license.
- */
-
+/*! Bordermarquee - v0.1.0 - 2016-01-06
+* https://github.com/xiamingxing/jquery.bordermarquee
+* Copyright (c) 2016 xiamingxing; Licensed MIT */
 (function ($) {
 
     // Collection method.
@@ -169,6 +164,7 @@
             };
 
             run($(i), option);
+
         });
     };
 

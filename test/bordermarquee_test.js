@@ -23,7 +23,7 @@
   module('jQuery#bordermarquee', {
     // This will run before each test in this module.
     setup: function() {
-      this.elems = $('#qunit-fixture').children();
+      this.elems = $('#qunit-fixture');
     }
   });
 
@@ -33,30 +33,5 @@
     strictEqual(this.elems.bordermarquee(), this.elems, 'should be chainable');
   });
 
-  test('is awesome', function() {
-    expect(1);
-    strictEqual(this.elems.bordermarquee().text(), 'awesome0awesome1awesome2', 'should be awesome');
-  });
-
-  module('jQuery.bordermarquee');
-
-  test('is awesome', function() {
-    expect(2);
-    strictEqual($.bordermarquee(), 'awesome.', 'should be awesome');
-    strictEqual($.bordermarquee({punctuation: '!'}), 'awesome!', 'should be thoroughly awesome');
-  });
-
-  module(':bordermarquee selector', {
-    // This will run before each test in this module.
-    setup: function() {
-      this.elems = $('#qunit-fixture').children();
-    }
-  });
-
-  test('is awesome', function() {
-    expect(1);
-    // Use deepEqual & .get() when comparing jQuery objects.
-    deepEqual(this.elems.filter(':bordermarquee').get(), this.elems.last().get(), 'knows awesome when it sees it');
-  });
 
 }(jQuery));
