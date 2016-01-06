@@ -8,14 +8,21 @@
     <!-- Load local lib and tests. -->
     <script src="../src/jquery.bordermarquee.js"></script>
     <style>
+        body {
+            background-color: #6bb665;
+        }
         #demo {
-            height: 100px;
-            width: 100px;
+            height: 500px;
+            width: 500px;
+            margin: 20px auto;
             background-color: #366097;
         }
 
         #btn {
-            margin: 10px;
+            display: block;
+            height: 50px;
+            width: 130px;
+            margin: auto;
         }
     </style>
 </head>
@@ -23,10 +30,16 @@
 <div id="demo">
 
 </div>
-<button id="btn">start</button>
+<button id="btn">开始</button>
 <script>
     $('#btn').click(function () {
-        $('#demo').bordermarquee();
+        $('#demo').bordermarquee({
+            lineStyle: "2px solid #000",
+            direction: 1,
+            complete: function (){
+                alert("完成!");
+            }
+        });
     });
 </script>
 </body>
