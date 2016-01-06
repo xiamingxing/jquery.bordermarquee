@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bordermarquee Test Suite</title>
+    <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
+    <script src="../libs/jquery-loader.js"></script>
+    <!-- Load local lib and tests. -->
+    <script src="../src/jquery.bordermarquee.js"></script>
+    <style>
+        #demo {
+            height: 100px;
+            width: 100px;
+            background-color: #366097;
+        }
+
+        #btn {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo">
+
+</div>
+<button id="btn">start</button>
+<script>
+    $('#btn').click(function () {
+        $('#demo').bordermarquee();
+    });
+</script>
+</body>
+</html>

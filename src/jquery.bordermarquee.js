@@ -11,9 +11,9 @@
     // Collection method.
     $.fn.bordermarquee = function (option) {
 
-        option = $.extend({}, $.fn.bordermarquee.option, option);
+        option = $.extend({}, $.fn.bordermarquee.options, option);
 
-        return this.each(function (i) {
+        return this.each(function () {
 
             var buildFrames = function (type, direction, containerConf, lineStyle) {
                 type = type || 0;
@@ -115,9 +115,7 @@
                             }
                             else {
                                 $ele.css("display", 'none');
-                                if (callback){
-                                    callback($ele);
-                                }
+                                callback($ele);
                             }
                         });
                 });
@@ -128,7 +126,7 @@
                     throw new Error("frames length error!");
                 }
 
-                var template = '<div class="borderMarquee" style="display: none;"></div>',
+                var template = '<div class="borderMarquee"></div>',
                     tpls = [];
 
                 for (; length--;) {
@@ -168,7 +166,7 @@
                 });
             };
 
-            run($(i), option);
+            run($(this), option);
         });
     };
 
@@ -185,7 +183,7 @@
         },
         rate: 200,
         times: 3,
-        autoDestroy: false,
+        autoDestroy: true,
         lineStyle: "1px solid #000",
         direction: 1,
         complete: null
