@@ -11,7 +11,7 @@
     // Collection method.
     $.fn.bordermarquee = function (option) {
 
-        option = $.extend({}, $.fn.bordermarquee.options, option);
+        option = $.extend({}, $.fn.bordermarquee.option, option);
 
         return this.each(function () {
 
@@ -170,8 +170,8 @@
         });
     };
 
-    // Static method default options.
-    $.fn.bordermarquee.options = {
+    // Static method default option.
+    $.fn.bordermarquee.option = {
         punctuation: '1.0.0',
         cssText: {
             display: 'block',
