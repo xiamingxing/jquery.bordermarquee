@@ -19,7 +19,7 @@ jQuery(function($) {
         lineStyle: "2px solid #000",
         direction: 1,
         complete: function (){
-            alert("Íê³É!");
+            alert("done!");
         }
     });
 });
